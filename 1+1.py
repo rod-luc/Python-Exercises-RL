@@ -12,6 +12,8 @@ def array123(nums):
   return rta    
 
 print(array123([1, 2, 3]))
+print(array123([1,1, 2, 3]))
+print(array123([1, 2, 2]))
 
 import numpy as np
  
@@ -30,14 +32,3 @@ scaled_vector = vector * scalar
 print("Scalar multiplication:", scaled_vector)
 
 print("Vector multiplication: ", vector * vector2 )
-
-from sentence_transformers import SentenceTransformer
- 
-sentences = ["Apple is a fruit", "Car is a vehicle"]
- 
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-embeddings = model.encode(sentences)
- 
-print(len(embeddings[0]))
- 
-print(embeddings)
